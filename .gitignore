@@ -6,3 +6,4 @@ vendor
 package-lock.json
 package.json
 gulpfile.js
+.old
