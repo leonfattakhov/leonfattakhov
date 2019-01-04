@@ -1,0 +1,8 @@
+node_modules
+.idea
+.vscode
+app
+vendor
+package-lock.json
+package.json
+gulpfile.js
