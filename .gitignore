@@ -110,3 +110,6 @@ old_data
 
 # Deployment scripts
 *.bat
+
+# Dist
+dist
