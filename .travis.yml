@@ -10,10 +10,10 @@ script:
 
 deploy:
   provider: pages
-  target_branch: dev
+  target_branch: master
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   local_dir: dist
   keep_history: true
   on:
-    branch: migration-to-ci
+    branch: dev
