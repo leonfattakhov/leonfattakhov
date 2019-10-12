@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Leon Fattakhov's Personal website">
+  <meta name="author" content="Leon Fattakhov">
+  <title>Leon Fattakhov</title>
+  <meta name="theme-color" content="#001c2a" />
+  <meta name="msapplication-navbutton-color" content="#001c2a">
+  <meta name="msapplication-TileColor" content="#001c2a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#001c2a">
+  <meta name="google-site-verification" content="0o7ESsV4WTnYECxFEVf5GGnhNwzMSsIRud014XZ1ypY" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="manifest" href="static/site.webmanifest">
+  <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#001c2a">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/web.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top" style="display: none">
+    <div class="container">
+      <a class="custom-navbrand" target="#intro">
+        Leon Fattakhov
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" target="#intro">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="#photography">Photography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="intro"></div>
+  <div class="modal fade" tabindex="-1" role="dialog" id="displayBox" aria-hidden="true">
+    <button type="button" class="vid-stop close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="vertical-alignment-helper">
+      <div class="modal-dialog vertical-align-center modal-lg">
+        <div class="modal-content">
+          <div class="image-container tscale">
+            <img id="img-id" src="">
+          </div>
+          <div class="video-container tscale">
+            <video class="embed-responsive" controls>
+              <source id="vid-id" src="" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="landing-text vertical-center justify-content-center">
+    <div class="container ms-center">
+      <div class="row image-center">
+        <img class="img-fluid rounded-circle picture" src="images/profile-headshot.jpg" alt="Leon">
+      </div>
+      <h1 class="intro-text">Leon Fattakhov</h1>
+      <div class="social">
+        <div class="row short">
+          <a class="icon" target="_blank" href="https://devpost.com/coolcom200">
+            <img class="icon-img" src="images/icons/icons8-dev-post-480.png" alt="Devpost">
+          </a>
+          <a class="icon" target="_blank" href="https://github.com/coolcom200">
+            <img class="icon-img" src="images/icons/GitHub-Mark-Light-120px-plus.png" alt="GitHub">
+          </a>
+          <a class="icon" target="_blank" href="https://www.linkedin.com/in/leon-fattakhov/">
+            <img class="icon-img" id="linkedin" src="images/icons/In-White-121px-R.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+      <div id="scrollDown" class="row arrow justify-content-center">
+        <img src="images/icons/chevronv3.png" alt="See More Below">
+      </div>
+    </div>
+  </div>
+  <section id="projects">
+    <h2 class="container" style="padding-bottom: 1vh;">Projects</h2>
+    <div class="container card-columns">
+      <div id="timelime" class="card bg-custom text-align-center">
+        <img class="card-img-top" src="images/timelime.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">TimeLime</h5>
+          <p class="card-text">A Chrome Extension that helps user find an optimal meeting time by analyzing Facebook
+            Messenger chat messages for availability information to create a visual timeline. </p>
+          <div class="tags">
+            <span class="badge badge-pill badge-secondary">Node.js</span>
+            <span class="badge badge-pill badge-secondary">HTML</span>
+            <span class="badge badge-pill badge-secondary">CSS</span>
+            <span class="badge badge-pill badge-secondary">JavaScript</span>
+          </div>
+          <div class="button2x row">
+            <a href="https://devpost.com/software/timelime" target="_blank" class="btn btn-outline-primary">Learn
+              More</a>
+            <a href="https://chrome.google.com/webstore/detail/timelime/gmfkkaffiekmckmbajmfgibfiimmhmeh"
+              target="_blank" class="btn btn-outline-success">Try it out</a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-custom text-align-center">
+        <img class="card-img-top" src="images/nutrime.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">NutriMe</h5>
+          <p class="card-text">An application that tracks your nutrition intake based on the nutrition facts of the
+            food
+            items you eat and stores the data locally on your smartphone</p>
+          <div class="tags">
+            <span class="badge badge-pill badge-secondary">Android</span>
+            <span class="badge badge-pill badge-secondary">Java</span>
+            <span class="badge badge-pill badge-secondary">REST API</span>
+            <span class="badge badge-pill badge-secondary">SQLite</span>
+          </div>
+          <a href="static/NutriMe Design Document.pdf" target="_blank" class="btn btn-outline-primary">Learn More</a>
+        </div>
+      </div>
+      <div id="ppp" class="card bg-custom text-align-center">
+        <img class="card-img-top" src="images/pebbleprompter.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Pebble Prompter</h5>
+          <p class="card-text">An auto scrolling teleprompter that scrolls based off what the users says and displays
+            it
+            on a Pebble Time smartwatch. </p>
+          <div class="tags">
+            <span class="badge badge-pill badge-secondary">Python</span>
+            <span class="badge badge-pill badge-secondary">JavaScript</span>
+            <span class="badge badge-pill badge-secondary">Speech to Text</span>
+            <span class="badge badge-pill badge-secondary">Fuzzy Analysis</span>
+          </div>
+          <div class="button2x row">
+            <a href="https://devpost.com/software/pebble-prompter" target="_blank" class="btn btn-outline-primary">Learn
+              More</a>
+            <a data-target="videos/ppp.mp4" class="btn btn-outline-success emb-video">See it in action</a>
+          </div>
+        </div>
+      </div>
+      <div id="sumnotes" class="card bg-custom text-align-center">
+        <img class="card-img-top" src="images/sumnotes.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SumNotes</h5>
+          <p class="card-text">An automatic note taker that works in your browser. It performs speech to text
+            conversion
+            and then summarizes the content for easy revision. </p>
+          <div class="tags">
+            <span class="badge badge-pill badge-secondary">HTML</span>
+            <span class="badge badge-pill badge-secondary">Flask</span>
+            <span class="badge badge-pill badge-secondary">CSS</span>
+            <span class="badge badge-pill badge-secondary">Python</span>
+            <span class="badge badge-pill badge-secondary">SQL database</span>
+          </div>
+          <div class="button2x row">
+            <a href="https://devpost.com/software/sumnotes" target="_blank" class="btn btn-outline-primary">Learn
+              More</a>
+            <a data-target="videos/sumnotes.mp4" class="btn emb-video btn-outline-success">See
+              it
+              in action</a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-custom text-align-center">
+        <img class="card-img-top" src="images/simpli-fly.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Simpli-fly</h5>
+          <p class="card-text">A hand motion controlled drone, built using an Ardunio, a Leap Motion and a Drone. It
+            flys
+            based on the height of your arm and the angle of your palm in relation to a Leap Motion.</p>
+          <div class="tags">
+            <span class="badge badge-pill badge-secondary">Ardunio</span>
+            <span class="badge badge-pill badge-secondary">Python</span>
+            <span class="badge badge-pill badge-secondary">Serial Communication</span>
+          </div>
+          <div class="button2x row">
+            <a href="https://devpost.com/software/simpli-fly" target="_blank" class="btn btn-outline-primary">Learn
+              More</a>
+            <a data-target="videos/simplifly.mp4" class="emb-video btn btn-outline-success">See it in
+              action</a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-custom text-align-center">
+        <img class="card-img-top" src="images/firebotc.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Firefighter Robot</h5>
+          <p class="card-text">A custom designed and built robot for locating and extinguishing fires (candles) in a
+            maze.
+            It locates fires based on the infrared light emitted and puts them out using a blower fan.</p>
+          <div class="tags">
+            <span class="badge badge-pill badge-secondary">C</span>
+            <span class="badge badge-pill badge-secondary">PIC</span>
+            <span class="badge badge-pill badge-secondary">PCB Design</span>
+          </div>
+          <a href="static/Firefighter Design Document.pdf" target="_blank" class="btn btn-outline-primary">Learn
+            More</a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- <div class="container justify-content-center" style="display:flex">
+      <button class="btn btn-primary">Show
+      More Projects</button>
+    </div> -->
+
+  </section>
+  <section id="photography">
+    <h2 class="container" style="padding-bottom: 1vh;">Photography</h2>
+    <div class="container card-columns">
+      <div class="card gallery-card"><img class="img-fluid gallery-image" src="images/DSC04154.jpg"></div>
+      <div class="card gallery-card"><img class="img-fluid gallery-image" src="images/DSC04275.jpg"></div>
+      <div class="card gallery-card"><img class="img-fluid gallery-image" src="images/DSC08875.JPG"></div>
+      <div class="card gallery-card"><img class="img-fluid gallery-image" src="images/DSC05006_E.jpg"></div>
+      <div class="card gallery-card"><img class="img-fluid gallery-image" src="images/DSC07766.jpg"></div>
+      <div class="card gallery-card"><img class="img-fluid gallery-image" src="images/DSC08089.jpg"></div>
+      <div class="card gallery-card"><img class="img-fluid gallery-image" src="images/DSC09095.jpg"></div>
+      <div class="card gallery-card"><img class="img-fluid gallery-image" src="images/DSC07796.jpg"></div>
+      <div class="card gallery-card"><img class="img-fluid gallery-image" src="images/DSC07806.jpg"></div>
+    </div>
+    <!-- <div class="container">
+      <div id="photo-gallery" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#photo-gallery" data-slide-to="0" class="active"></li>
+          <li data-target="#photo-gallery" data-slide-to="1"></li>
+          <li data-target="#photo-gallery" data-slide-to="2"></li>
+          <li data-target="#photo-gallery" data-slide-to="3"></li>
+          <li data-target="#photo-gallery" data-slide-to="4"></li>
+          <li data-target="#photo-gallery" data-slide-to="5"></li>
+          <li data-target="#photo-gallery" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block wh-100" src="" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block wh-100" src="" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block wh-100" src="" alt="Fourth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block wh-100" src="" alt="Fifth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block wh-100" src="" alt="Sixth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block wh-100" src="" alt="Seventh slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block wh-100" src="" alt="Eighth slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#photo-gallery" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#photo-gallery" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> -->
+    </div>
+  </section>
+  <section id="awards">
+    <h2 class="container" style="padding-bottom: 1vh;">Awards</h2>
+    <div class="container">
+      <table class="table table-striped table-light">
+        <tbody>
+
+          <tr>
+            <td>First Place at Waterloo WearHacks</td>
+            <td>Won the first place prize at Waterloo WearHacks by creating an
+              <a class="redirect" target="#ppp">AutoScrolling Teleprompter</a>
+            </td>
+            <td>2017</td>
+          </tr>
+          <tr>
+            <td>Best Use of Cockroach Database at Hack the North</td>
+            <td>Won the best implementation of a Cockroach relational database in
+              <a class="redirect" target="#sumnotes">SumNotes</a></td>
+            <td>2017</td>
+          </tr>
+          <tr>
+            <td>Second Place at Bonfire Hackathon</td>
+            <td>Won second place for creating <a class="redirect" target="#timelime">TimeLime.</a>
+              A Chrome Extension for finding user availability in Facebook Messenger chats</td>
+            <td>2017</td>
+          </tr>
+          <tr>
+            <td>Best use of CloudFlare Apps at MHacks X</td>
+            <td>Won the CloudFlare API prize for creating a plug and play comments section that has toggles for hiding
+              offensive content.
+            </td>
+            <td>2017</td>
+          </tr>
+          <tr>
+            <td>Academic Excellence</td>
+            <td>Attained the highest mark in TDJ2OI technological design course (97%).</td>
+            <td>2016</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section id="footer" style="
+  padding-bottom: 5vh;
+  margin-top: 4vh;
+  
+" class="container">
+    <h2 style="padding-bottom: 1vh;">Contact Me</h2>
+    <div class="row">
+      <div class="col-sm-8 contact-form">
+        <div>
+          <div class="form-group">
+            <label for="emailAddress">Your Email address</label>
+            <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp"
+              placeholder="Enter your email">
+            <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="messageInput">Enter your message</label>
+            <textarea rows="3" type="text" class="form-control" id="messageInput" placeholder="Your Message to Me"></textarea>
+          </div>
+            <div id="recaptcha" ></div>
+          <button id="contact-submit" class="btn btn-outline-primary">Send</button>
+        </div>
+      </div>
+      <div class="col-sm-4" style="height: auto;">
+        <div class="side-social">
+          <div class="row">
+            <a class="icon" target="_blank" href="https://devpost.com/coolcom200">
+              <img class="icon-img" src="images/icons/icons8-dark-dev-post-480.png" alt="Devpost">
+            </a>
+            <h3>Devpost</h3>
+          </div>
+          <div class="row">
+            <a class="icon" target="_blank" href="https://github.com/coolcom200">
+              <img class="icon-img" src="images/icons/GitHub-Mark-Dark-120px-plus.png" alt="GitHub">
+            </a>
+            <h3>GitHub</h3>
+          </div>
+          <div class="row">
+            <a class="icon" target="_blank" href="https://www.linkedin.com/in/leon-fattakhov/">
+              <img class="icon-img" id="linkedin" src="images/icons/In-Dark-121px-R.png" alt="LinkedIn">
+            </a>
+            <h3>LinkedIn</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!-- <section id="footer" style="
+  padding-bottom: 5vh;
+  padding-top: 7vh;
+  margin-top: 4vh;
+" class="">
+  <div class="social" style="height: auto;">
+      <div class="row short">
+          <a class="icon" target="_blank" href="https://devpost.com/coolcom200">
+            <img class="icon-img" src="images/icons/icons8-dark-dev-post-480.png" alt="Devpost">
+          </a>
+          <a class="icon" target="_blank" href="https://github.com/coolcom200">
+            <img class="icon-img" src="images/icons/GitHub-Mark-Dark-120px-plus.png" alt="GitHub">
+          </a>
+          <a class="icon" target="_blank" href="https://www.linkedin.com/in/leon-fattakhov/">
+            <img class="icon-img" id="linkedin" src="images/icons/In-Dark-121px-R.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+  </div>
+</section> -->
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.js"></script>
+  <script src="js/web.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
