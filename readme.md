@@ -15,3 +15,4 @@ This is the source code for my personal website
 3. `gulp run`
 4. `cd dist`
 5. Open the `index.html` file in your browser
+
