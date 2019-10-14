@@ -1,4 +1,5 @@
 ## Leon Fattakhov's Personal Website
+[![Build Status](https://travis-ci.com/leonfattakhov/leonfattakhov.github.io.svg?branch=dev)](https://travis-ci.com/leonfattakhov/leonfattakhov.github.io)
 
 This is the source code for my personal website
 
